@@ -1,0 +1,105 @@
+body{
+ background-image: url('../Images/Background.webp');
+ background-size: cover;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+}
+
+#OCEANGIFT{
+   color: white;
+   border-style: solid;
+   border-color: white;
+   display: inline-block;
+   
+}
+#mission{
+    border-style: solid;
+   border-color: white;
+   display: inline-block;
+}
+#missionP{
+   border: 1px solid white;
+   width:400px;
+   height: 200px ;
+}
+.Text{
+   border-style: solid;
+   border-color: white;
+   display: inline-block;
+}
+.images{
+    border: 2px solid white;
+   width: 1000px;
+   height: auto;
+}
+.Footer{
+    border: 5px solid white;
+}
+*{
+   font-family: sans-serif;
+   color: white;
+}
+p :hover{
+   background-color: rgb(255, 255, 138); 
+}
+.fa-solid fa-water{
+   color: aqua;
+}
+.reveal {
+   opacity: 0 ;
+   transform: translateY(40px);
+   transition: opacity 0.8s ease, transform 0.8s ease ;
+}
+.reveal.visible {
+   opacity: 1;
+   transform: translateY(0) ;
+}
+#Countdown {
+   display: flex;
+   gap: 16px;
+   justify-content: center;
+}
+.timebox {
+   background: #0a4d68;
+   color: white;
+   padding: 16px 20px;
+   border-radius: 12px;
+   text-align: center;
+   min-width: 80px;
+}
+.timebox span {
+   display: block;
+   font-size: 2rem;
+   font-weight: bold;
+}
+.tick {
+   animation: pop 0.4s ease;
+}
+@keyframes pop {
+   0% {transform: scale(1.4); opacity: 0.4;}
+   100% {transform: scale(1); opacity: 1;}
+}
+.timebox {
+   background: linear-gradient(135deg, #0a4d68 , #088395);
+   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+   transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+.timebox:hover{
+   transform: translateY(-6px);
+   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+.timebox small {
+   opacity: 0.85;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+}
+input,
+textarea {
+   color: #000;
+   background: #fff;
+}
+input[ type = "submit"] {
+   background: #0a4d68;
+   color: #fff;
+   cursor: pointer;
+}
